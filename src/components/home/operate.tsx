@@ -49,12 +49,12 @@ export default function Operate() {
   ];
 
   return (
-    <section className="bg-white py-14 px-4 font-serif">
+    <section className="bg-white py-14 px-4 md:px-20 font-serif">
       <div className="max-w-7xl mx-auto text-center">
-        <span className="text-sm text-orange-600 font-medium uppercase mb-2 block">
+        <span className="text-xs md:text-sm text-orange-600 font-medium uppercase mb-2 block">
           DNA Values
         </span>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-10">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-10">
           Our Core Principles
         </h2>
 
@@ -65,10 +65,10 @@ export default function Operate() {
                 <div className="bg-orange-100 rounded-full p-3 mb-3">
                   {step.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-700">
+                <h3 className="text-sm md:text-md font-semibold text-gray-700">
                   {step.label}
                 </h3>
-                <p className="text-sm text-gray-600 mt-2">{step.description}</p>
+                <p className="text-xs md:text-xs text-gray-600 mt-2">{step.description}</p>
               </div>
 
               {index !== steps.length - 1 && (

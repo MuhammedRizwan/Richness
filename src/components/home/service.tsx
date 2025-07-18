@@ -51,16 +51,16 @@ const services = [
 
 export default function OurService() {
     return (
-        <section className="bg-orange-50 py-16 px-4 md:px-12 font-serif">
+        <section className="bg-orange-50 py-16 px-4 md:px-16 font-serif">
             <div className="max-w-7xl mx-auto">
-                <span className="bg-white px-3 py-2 text-sm text-yellow-400 font-semibold uppercase mb-2 inline-block">
+                <span className="bg-white px-3 py-2 text-xs md:text-sm text-yellow-400 font-semibold uppercase mb-2 inline-block">
                     Latest Services
                 </span>
                 <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mb-6">
-                    <h2 className="text-3xl font-bold text-gray-800">
+                    <h2 className="text-lg md:text-2xl font-bold text-gray-800">
                         Our Solutions For A Better Business
                     </h2>
-                    <p className="text-gray-600 mt-4 md:mt-0 max-w-xl text-sm">
+                    <p className="text-gray-600 mt-4 md:mt-0 max-w-xl text-xs md:text-sm">
                         Our commitment is to empower organizations with strategic planning and data-driven insights that fuel sustainable growth. Through tailored business strategies and actionable roadmaps, we help you navigate complexity, unlock opportunities, and position your brand for long-term success. Partner with us to transform vision into value and build a resilient, future-ready enterprise.
                     </p>
                 </div>
@@ -72,7 +72,7 @@ export default function OurService() {
                             className={`bg-white rounded-xl shadow hover:shadow-lg transition p-4 relative 
                             flex-shrink-0 w-[100%] snap-start md:w-auto ${item.className ?? ""}`}
                         >
-                            <div className="relative h-64 md:h-48 w-full mb-4 overflow-hidden rounded-md">
+                            <div className="relative h-72 md:h-48 w-full mb-4 overflow-hidden rounded-md">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -80,9 +80,9 @@ export default function OurService() {
                                     className="object-cover"
                                 />
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
-                            <p className="text-gray-600 text-sm mt-2">{item.description}</p>
-                            <button className="text-sm mt-4 text-primary hover:underline">
+                            <h3 className="text-md md:text-xl font-semibold text-gray-800">{item.title}</h3>
+                            <p className="text-gray-600 text-xs md:text-sm mt-2">{item.description}</p>
+                            <button className="text-xs md:text-sm mt-4 text-gray-500 hover:underline">
                                 Read More →
                             </button>
                         </div>
